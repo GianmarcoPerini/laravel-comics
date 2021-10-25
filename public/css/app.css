@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;
+
+0,700;1,400&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap);ul {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 100ms;
+}
+
+ul li:hover {
+  background-color: #309979;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.card {
+  margin: 10px;
+  width: calc(16.6666666667% - 20px);
+  transition: transform 100ms ease-in-out;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  font-size: 0.75rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+

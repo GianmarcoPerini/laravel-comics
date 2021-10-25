@@ -1,0 +1,19 @@
+@import 'variables';
+
+ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+
+    li{
+        padding: 15px;
+        font-weight: bold;
+        font-size: 1.3rem;
+        transition: 100ms;
+        
+        &:hover{
+            background-color: darken(rgb(60, 192, 152), 10%);
+        }
+    }
+}
