@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('landing');
-});
+})->name('home');
 
 Route::get('/char', function () {
     return view('char');
