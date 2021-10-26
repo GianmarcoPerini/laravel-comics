@@ -1,6 +1,6 @@
 <ul>
     @foreach ($links as $link )
-        <li class=" {{ Request::path() ==  $link['route'] ? 'active' : '' }} "><a href=" {{ $link['route'] }} "> {{ $link['text'] }} </a></li>
+        <li class=" {{ Request::path() ==  $link['route'] ? 'active' : '' }} "><a href=" {{ route($link['route']) }} "> {{ $link['text'] }} </a></li>
     @endforeach
 </ul>
 

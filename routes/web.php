@@ -19,18 +19,17 @@ Route::get('/', function () {
 
 Route::get('/char', function () {
     return view('char');
-});
+})->name('char');
 
 Route::get('/mov', function () {
     return view('mov');
-});
+})->name('mov');
 
 Route::get('/card/{id}', function ($id) {
     $comics = config('comics');
     if(is_numeric($id) && $id < count($comics) && $id >= 0) {
         $comic = $comics[$id];
-        return view('card', [ 'comics' => $comic ]);
+        return view('card', [ 'comic' => $comic ]);
     }
     abort('404');
-    
 })->name('card');

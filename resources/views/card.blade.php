@@ -3,25 +3,25 @@
 @section('base_data')
 <section>
     <div class="comic-img">
-        <img src=" {{ $comics['thumb'] }} " alt="">
+        <img src=" {{ $comic['thumb'] }} " alt="">
     </div>
 
     <div class="comics-wrapper">
         <div class="info-comic">
-            <h1> {{ $comics['title']}} </h1>
+            <h1> {{ $comic['title']}} </h1>
             <div class="price">
-                <p>U.S Price: {{ $comics['price']}} </p>
+                <p>U.S Price: {{ $comic['price']}} </p>
                 <div>
                     <p class="margin">AVAILABLE</p>
                     <p>Check Availability</p>    
                 </div>
             </div> 
             <div class="description">
-                <p> {{ $comics['description']}} </p>
+                <p> {{ $comic['description']}} </p>
             </div>  
         </div>
         <div class="banner">
-    
+            <img src=" {{ asset('img/banner.jpg') }} " alt="">
         </div> 
     </div>
 
@@ -33,7 +33,7 @@
                     <h3>art by:</h3>
                 </div>
                 <div class="talent-name">
-                    @foreach ($comics['artists'] as $artist )
+                    @foreach ($comic['artists'] as $artist )
                         <p> {{ $artist }}, </p>
                     @endforeach
                 </div>

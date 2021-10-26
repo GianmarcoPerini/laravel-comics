@@ -5,11 +5,13 @@
     <div class="wrapper">
 
             @foreach ( config('comics') as $comic )
+            <a href=" {{ route('card',  $loop->index ) }} ">
                 <div class="card">
-                    <a href=" {{ route('card') }} "><img src=" {{ $comic['thumb']}} " alt=""></a>
+                    <img src=" {{ $comic['thumb']}} " alt="">
                 </div>
+            </a>
             @endforeach
-            
+
     </div>
 
 @endsection
