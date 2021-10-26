@@ -25,6 +25,12 @@ Route::get('/mov', function () {
     return view('mov');
 });
 
-Route::get('/card', function () {
-    return view('card', [ 'comics' => config('comics')[0] ]);
+Route::get('/card/{id}', function ($id) {
+    $comics = config('comics');
+    if(is_numeric($id) && $id < count($comics) && $id >= 0) {
+        $comic = $comics[$id];
+        return view('card', [ 'comics' => $comic ]);
+    }
+    abort('404');
+    
 })->name('card');

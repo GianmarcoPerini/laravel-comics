@@ -17,7 +17,7 @@
                 </div>
             </div> 
             <div class="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt quod nesciunt debitis fugiat maxime mollitia blanditiis aperiam! Animi quidem placeat corporis. Aut sunt eos cum neque sequi amet a?</p>
+                <p> {{ $comics['description']}} </p>
             </div>  
         </div>
         <div class="banner">
