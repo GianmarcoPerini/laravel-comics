@@ -4,7 +4,7 @@ ul{
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    
+    text-transform: uppercase;
 
     li{
         padding: 15px;
@@ -13,7 +13,26 @@ ul{
         transition: 100ms;
         
         &:hover{
-            background-color: darken(rgb(60, 192, 152), 10%);
+            background-color: rgb(60, 192, 152);
         }
     }
+}
+
+.jumbo{
+    height: 55vh;
+    background-color: red;
+    border-bottom: 80px solid $primary;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+
+
+.active{
+    background-color: darken(rgb(60, 192, 152), 10%);
 }

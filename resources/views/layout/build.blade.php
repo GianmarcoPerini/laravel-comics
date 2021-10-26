@@ -11,12 +11,7 @@
 
     @include('partial.head', ['links' => config('my_data')])
 
-    @yield('nome_a_caso_land')
-
-    @yield('nome_a_caso_mov')
-
-    @yield('nome_a_caso_char')
+    @yield('base_data')
 
 </body>
 </html>
-

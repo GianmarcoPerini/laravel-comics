@@ -2,6 +2,7 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 ul li {
   padding: 15px;
@@ -10,7 +11,29 @@ ul li {
   transition: 100ms;
 }
 ul li:hover {
+  background-color: #3cc098;
+}
+
+.jumbo {
+  height: 55vh;
+  background-color: red;
+  border-bottom: 80px solid #0282f9;
+}
+.jumbo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.active {
   background-color: #309979;
+}
+
+section {
+  padding-bottom: 100px;
 }
 
 .wrapper {
@@ -38,6 +61,73 @@ ul li:hover {
 }
 .card:hover {
   transform: scale(1.1);
+}
+
+.comic-img {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  height: 250px;
+  width: 150px;
+  border: 2px solid white;
+}
+.comic-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comics-wrapper {
+  display: flex;
+}
+.comics-wrapper .info-comic {
+  margin: 50px 0 0 300px;
+  max-width: 500px;
+}
+.comics-wrapper .info-comic .price {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #55ba59;
+  border-bottom: 1px solid black;
+}
+.comics-wrapper .info-comic .price .margin {
+  margin-right: 20px;
+}
+.comics-wrapper .info-comic .price p {
+  display: inline;
+  color: #c2e6c3;
+  font-weight: bold;
+}
+.comics-wrapper .info-comic .description {
+  margin-top: 10px;
+}
+.comics-wrapper .banner {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.talent-specs {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.talent-specs .talent .talent-name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.talent-specs .talent .talent-name h3 {
+  padding: 20px;
+  margin-right: 100px;
+}
+.talent-specs .talent p {
+  margin-right: 5px;
 }
 
 * {

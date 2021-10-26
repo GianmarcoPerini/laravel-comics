@@ -24,3 +24,7 @@ Route::get('/char', function () {
 Route::get('/mov', function () {
     return view('mov');
 });
+
+Route::get('/card', function () {
+    return view('card', [ 'comics' => config('comics')[0] ]);
+})->name('card');

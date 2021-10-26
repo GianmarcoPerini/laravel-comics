@@ -1,11 +1,11 @@
 @extends('layout.build')
 
-@section('nome_a_caso_char')
+@section('base_data')
 
     <div class="wrapper">
         @foreach ( config('comics') as $comic )
             <div class="card">
-                <img src=" {{ $comic['thumb']}} " alt="">
+                <a href=" {{ route('card') }} "><img src=" {{ $comic['thumb']}} " alt=""></a>
             </div>
         @endforeach
     </div>
